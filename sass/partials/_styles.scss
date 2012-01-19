@@ -1,0 +1,117 @@
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+body.bp {
+  font-family: 'Josefin Sans', arial, serif;
+  background: #eae3dd url(../images/background.jpg) repeat top left;
+  color: rgb(60, 60, 60);
+
+  h1 {
+    font-size: 4.25em;
+    letter-spacing: -1px;
+    color: #333;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2.75em;
+    color: #777;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 2em;
+    color: #777;
+    font-weight: 400;
+  }
+  
+  h1, h2, h3 {
+    @include text-shadow(rgba(255,255,255,0.9), -1px, -1px, 0px);
+  }
+  
+  ul.icons {
+    @include horizontal-list;
+    li {
+      @include horizontal-list-item(20px, left);
+      padding-top:10px;
+      &:hover {
+        padding-top: 0px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  #header {
+    @include prepend-top(75px);
+    #me {
+      @include column(3);
+
+      img {
+        @include box-shadow(rgba(0,0,0,0.3), 2px, 2px, 2px);
+        border-top: 1px solid rgba(255,255,255,0.9);
+        border-left: 1px solid rgba(255,255,255,0.9);
+      }
+    }
+    #what {
+      @include column(7, true);
+      h1 {
+        margin-top: 0.6em;
+        margin-bottom: 0;
+      }
+    }  
+  }
+  
+  #content {
+    h1, h2 {
+      margin-top: 1.75em;
+      margin-bottom: 0.25em;
+    }
+    ul.icons {
+      li {
+        @include horizontal-list-item(25px, left);
+      }
+    }
+    
+    ul.projects {
+      @include horizontal-list;
+      margin: 0;
+      padding: 0;
+      margin-left: 58px;
+      margin-top: 32px;
+      
+      li {
+        width: 252px;
+        padding: 0;
+        padding-right: 24px;
+        margin-bottom: 48px;
+                
+        img {
+          float: left;
+          margin-right: 10px;
+        }
+        h3 {
+          margin-top: 2px;
+          margin-bottom: 0.5em;
+        }
+        p {
+          white-space: normal;
+          margin-bottom: 1em;
+          line-height: 1.2em;
+        }
+      }
+    }
+  }
+  
+  #footer {
+    margin-top: 50px;
+    hr {
+      margin-bottom: 10px;
+    }
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}

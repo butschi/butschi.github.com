@@ -1,0 +1,60 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://creativecommons.org/licenses/MIT/	*/
+
+
+// Default
+body.less {
+  #container {
+    @include container; 
+  }
+  #header, #footer, #content {
+    @include column($blueprint-grid-columns, true);
+  }
+}
+
+
+// Tablet
+@media only screen and (min-width: 768px) and (max-width: 895px) {
+  body.less {
+    #container {
+      width: 712px;
+    }
+    #header, #footer, #content {
+      @include column(8, true);
+    }
+  }
+}
+
+
+// Mobile
+@media only screen and (max-width: 767px) {
+  body.less {
+    #container {
+      width: 252px;
+    }
+    #header, #footer, #content {
+      @include column(3, true);
+    }
+  }
+}
+
+// Wide mobile
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body.less {
+    #container {
+      width: 436px;
+    }
+    #header, #footer, #content {
+      @include column(5, true);
+    }
+  }
+}
+
+// Retina
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+}

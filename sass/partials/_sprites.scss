@@ -1,0 +1,49 @@
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.icon-sprite {
+  display:block;
+  background-image: url("../images/icon-sa5666d8ffe.png");
+  height: 64px;
+}
+.icon-hr {
+  border: none;
+  height: image-height("../images/icon/hr.png");
+  width: image-width("../images/icon/hr.png");
+}
+.icon-apple {
+  width: image-width("../images/icon/apple.png");
+}
+.icon-gmail {
+  width: image-width("../images/icon/gmail.png");
+}
+.icon-html5 {
+  width: image-width("../images/icon/html5.png");
+}
+.icon-korsar {
+  width: image-width("../images/icon/korsar.png");
+}
+.icon-landyachtz {
+  width: image-width("../images/icon/landyachtz.png");
+}
+.icon-powell {
+  width: image-width("../images/icon/powell.png");
+}
+.icon-rails {
+  width: image-width("../images/icon/rails.png");
+}
+.icon-signals {
+  width: image-width("../images/icon/signals.png");
+}
+.icon-twitter {
+  width: image-width("../images/icon/twitter.png");
+}
+.icon-vans {
+  width: image-width("../images/icon/vans.png");
+}
+.icon-xing {
+  width: image-width("../images/icon/xing.png");
+}
+.icon-yukon {
+  width: image-width("../images/icon/yukon.png");
+}
